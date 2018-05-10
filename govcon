@@ -1,0 +1,11 @@
+#!/usr/bin
+<?php
+require_once __DIR__ . '/vendor/autoload.php';
+//require_once "src/govcon.php";
+use Symfony\Component\Console\Application;
+use GovCon\GovCon;
+
+$application = new Application();
+$application->add(new GovCon());
+$application->run();
+?>
